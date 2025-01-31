@@ -1,0 +1,81 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecfdf3; /* Soft green background */
+    color: #2d6a4f; /* Dark green text for better readability */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #38b000; /* Lively green */
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 4px solid #27ae60; /* Green border for emphasis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Navigation link styling */
+nav a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: #d9f99d; /* Light green on hover */
+    text-decoration: underline;
+}
+
+/* Main content area styling */
+main {
+    padding: 3rem;
+    text-align: center;
+    background: url('plant-pattern.png') no-repeat center center fixed; /* Background image with plant pattern */
+    background-size: cover;
+}
+
+/* Button styling */
+button {
+    background-color: #27ae60; /* Dark green */
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #1e7e45; /* Slightly darker green */
+    transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+/* Additional styling for buttons when active */
+button:active {
+    transform: scale(0.98); /* Slight reduction in size when clicked */
+}
+
+/* Subtle shadow effect on buttons */
+button {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+/* Footer with plant theme */
+footer {
+    background-color: #38b000;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-top: 4px solid #27ae60;
+}

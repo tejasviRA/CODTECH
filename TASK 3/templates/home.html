@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to PlantPal</h1>
+<p> We aim to create a platform where farmers can easily upload a picture of their diseases plant leaf and receive immediate feedback on what disease it is and how to treat it.</p>
+<p>Upload an image of your plant leaf to detect diseases.</p>
+<form action="/predict" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required>
+    <button type="submit">Upload</button>
+</form>
+{% if prediction %}
+    <h2>Prediction: {{ prediction }}</h2>
+    <p>Accuracy: {{ accuracy }}%</p>
+    <img src="{{ url_for('static', filename=image) }}" alt="Uploaded Image">
+{% endif %}
+{% endblock %}
